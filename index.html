@@ -145,6 +145,7 @@
   .about .txt em{color:var(--paper)}
   .skills{margin-top:36px;display:grid;gap:16px}
   @media (min-width:600px){.skills{grid-template-columns:1fr 1fr}}
+  @media (min-width:600px){.skill:last-child:nth-child(odd){grid-column:1/-1}}
   .skill{border:1px solid var(--ink-line);background:var(--ink-soft);border-radius:16px;padding:22px}
   .skill small{display:block;font:400 11px var(--mono);letter-spacing:.16em;color:var(--amber);margin-bottom:10px}
   .skill p{margin:0!important;font-size:15px!important;color:#BDB5A7!important}
@@ -463,7 +464,6 @@
         <div class="skill"><small>DESARROLLO</small><p>HTML, CSS y JavaScript · diseño para celular primero · apps que funcionan sin conexión</p></div>
         <div class="skill"><small>AUTOMATIZACIÓN</small><p>Google Apps Script · Sheets y Drive como base de datos · integraciones con WhatsApp</p></div>
         <div class="skill"><small>DISEÑO</small><p>Composición y jerarquía · tipografía · identidad visual · banners y piezas para redes</p></div>
-        <div class="skill"><small>FOTOGRAFÍA</small><p>Retrato, producto y eventos · edición y color · fotos de producto para la tienda</p></div>
       </div>
     </div>
   </div>
