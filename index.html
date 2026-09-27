@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Marcelo Riffo · Sitios web y sistemas</title>
-<meta name="description" content="Sitios web y sistemas a medida para comercios del Valle Inferior del Río Chubut. Proyecto destacado: Trelewflash.">
+<meta name="description" content="Sitios web y sistemas a medida para comercios del Valle Inferior del Río Chubut. Proyectos: Trelewflash y Mis Inversiones.">
 <meta name="theme-color" content="#141210">
 
 <meta property="og:type" content="website">
@@ -128,6 +128,10 @@
   .stack small{font:400 11.5px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--stone-dim);margin-right:6px}
   .chip{font:400 12.5px var(--mono);border:1px solid var(--paper-line);background:#F6F2EA;border-radius:999px;padding:6px 13px}
   .proj-cta{margin-top:44px}
+  .proj+.proj{margin-top:110px;padding-top:110px;border-top:1px solid var(--paper-line)}
+  .showcase.noche{background:linear-gradient(150deg,#1B3B52,#12283A 55%,#0B1624);box-shadow:0 30px 60px -30px rgba(10,20,35,.6)}
+  .showcase.noche .phone{background:#05090F}
+  .nota{margin:14px 0 0;font:400 12px var(--mono);color:var(--stone-dim)}
 
   /* ---------- sobre mí ---------- */
   .about{display:grid;gap:40px}
@@ -199,7 +203,7 @@
     <h1>Webs y sistemas que tu negocio <em>usa todos los días.</em></h1>
     <p class="lead">Soy Marcelo Riffo. Hago webs y herramientas a medida para comercios del Valle: tiendas que toman pedidos solas, paneles para administrar desde el celular y cajas conectadas a una planilla.</p>
     <div class="actions">
-      <a class="btn btn-amber" href="#proyectos">Ver el proyecto <span class="arr">→</span></a>
+      <a class="btn btn-amber" href="#proyectos">Ver proyectos <span class="arr">→</span></a>
       <a class="btn btn-line" href="#contacto">Contactarme</a>
     </div>
     <div class="exif">
@@ -209,12 +213,13 @@
   </div>
 </section>
 
-<!-- ============ PROYECTO: TRELEWFLASH ============ -->
+<!-- ============ PROYECTOS ============ -->
 <section id="proyectos">
   <div class="wrap">
+   <div class="proj">
     <div class="proj-head reveal">
       <div>
-        <p class="eyebrow">01 — Proyecto destacado</p>
+        <p class="eyebrow">01 — Proyectos</p>
         <span class="tag">En uso real · Trelew</span>
         <h2>Trelewflash: el local de fotos, entero en el celular.</h2>
       </div>
@@ -284,6 +289,77 @@
     <div class="proj-cta reveal">
       <a class="btn btn-ink" href="https://trelewflash.com.ar/?utm_source=portfolio&amp;utm_medium=referral&amp;utm_campaign=marceloriffo" target="_blank" rel="noopener">Visitar trelewflash.com.ar <span class="arr">↗</span></a>
     </div>
+   </div>
+
+   <div class="proj">
+    <div class="proj-head reveal">
+      <div>
+        <span class="tag">Herramienta propia · uso diario</span>
+        <h2>Mis Inversiones: la cartera, clara de un vistazo.</h2>
+      </div>
+      <p>Un tablero para seguir inversiones repartidas en varias billeteras: acciones fraccionadas, fondos comunes, cripto y efectivo, en pesos y en dólares. Lee una planilla de Google en vivo, trae los precios del día y muestra cuánto vale todo, cuánto rindió y qué parte es plata puesta y qué parte es ganancia.</p>
+    </div>
+
+    <div class="showcase noche reveal">
+      <div class="browser">
+        <div class="bar"><i></i><i></i><i></i><span>Mis Inversiones</span></div>
+        <img src="img/inversiones-compu.webp" width="1440" height="830" loading="lazy" alt="Tablero de Mis Inversiones en la computadora: valor de la cartera, resultado, composición por activo y lista de posiciones">
+      </div>
+      <div class="phone">
+        <img src="img/inversiones-celu.webp" width="780" height="1688" loading="lazy" alt="El mismo tablero en el celular, con la barra de pestañas abajo">
+      </div>
+    </div>
+    <p class="nota reveal">Capturas con datos de demostración. Los precios son reales, las tenencias no.</p>
+
+    <div class="features">
+      <article class="feat reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+        <h3>Precios en vivo</h3>
+        <p>Acciones desde Yahoo Finance, fondos comunes desde su valor de cuotaparte y el dólar oficial, MEP o blue, todo a través de funciones propias y sin claves de API.</p>
+      </article>
+      <article class="feat reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18"/></svg></div>
+        <h3>La planilla manda</h3>
+        <p>Las operaciones viven en Google Sheets y la app las lee en vivo. También se pueden cargar desde la app, protegidas con PIN.</p>
+      </article>
+      <article class="feat reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-6"/></svg></div>
+        <h3>Qué pusiste y qué rindió</h3>
+        <p>La pestaña Progreso separa la plata aportada de lo que creció solo, y muestra cómo salió cada compra y venta.</p>
+      </article>
+      <article class="feat reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/></svg></div>
+        <h3>Carga desde una captura</h3>
+        <p>Se pasa el comprobante a una IA con una instrucción lista para copiar, y lo que devuelve se pega en la app: la operación queda cargada y revisada.</p>
+      </article>
+      <article class="feat reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></div>
+        <h3>Celular y compu</h3>
+        <p>Se instala como app en Android y en Windows, abre sin conexión y se reacomoda sola: pestañas abajo en el teléfono, panel lateral en pantalla grande.</p>
+      </article>
+      <article class="feat reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+        <h3>Cuentas que cierran</h3>
+        <p>Comisiones, dividendos, cashback y tipo de cambio calculados con cuidado, y cubiertos por pruebas automáticas que avisan si algo se rompe.</p>
+      </article>
+    </div>
+
+    <div class="numbers reveal">
+      <div class="num"><b>4</b><span>tipos de activo:<br>acciones, fondos, cripto, efectivo</span></div>
+      <div class="num"><b>3</b><span>fuentes de precios<br>consultadas en vivo</span></div>
+      <div class="num"><b>196</b><span>pruebas automáticas<br>sobre los cálculos</span></div>
+      <div class="num"><b>0</b><span>dependencias en el front:<br>JavaScript puro</span></div>
+    </div>
+
+    <div class="stack reveal">
+      <small>Hecho con</small>
+      <span class="chip">HTML · CSS · JavaScript</span>
+      <span class="chip">Netlify Functions</span>
+      <span class="chip">Google Sheets</span>
+      <span class="chip">Google Apps Script</span>
+      <span class="chip">PWA</span>
+    </div>
+   </div>
   </div>
 </section>
 
