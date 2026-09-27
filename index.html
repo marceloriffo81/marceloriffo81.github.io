@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Marcelo Riffo · Sitios web y sistemas</title>
-<meta name="description" content="Sitios web y sistemas a medida para comercios del Valle Inferior del Río Chubut. Proyectos: Trelewflash y Mis Inversiones.">
+<meta name="description" content="Sitios web y sistemas a medida para comercios del Valle Inferior del Río Chubut. Proyectos: Trelewflash, Mis Inversiones y Mi Gallinero.">
 <meta name="theme-color" content="#141210">
 
 <meta property="og:type" content="website">
@@ -131,6 +131,11 @@
   .proj+.proj{margin-top:110px;padding-top:110px;border-top:1px solid var(--paper-line)}
   .showcase.noche{background:linear-gradient(150deg,#1B3B52,#12283A 55%,#0B1624);box-shadow:0 30px 60px -30px rgba(10,20,35,.6)}
   .showcase.noche .phone{background:#05090F}
+  .showcase.campo{padding:clamp(22px,4vw,48px) clamp(14px,4vw,48px);background:linear-gradient(150deg,#2E6B45,#1D4A30 55%,#12301F);box-shadow:0 30px 60px -30px rgba(15,40,25,.6)}
+  .tres{display:grid;grid-template-columns:repeat(3,minmax(0,250px));justify-content:center;align-items:center;gap:clamp(10px,3vw,40px)}
+  .tres figure{margin:0;border-radius:clamp(16px,3vw,30px);padding:clamp(4px,.7vw,8px);background:#0A140E;box-shadow:0 24px 44px -18px rgba(0,0,0,.6)}
+  .tres figure img{border-radius:clamp(12px,2.4vw,23px)}
+  .tres figure:nth-child(2){transform:translateY(clamp(-26px,-3vw,-10px))}
   .nota{margin:14px 0 0;font:400 12px var(--mono);color:var(--stone-dim)}
 
   /* ---------- sobre mí ---------- */
@@ -358,6 +363,75 @@
       <span class="chip">Google Sheets</span>
       <span class="chip">Google Apps Script</span>
       <span class="chip">PWA</span>
+    </div>
+   </div>
+
+   <div class="proj">
+    <div class="proj-head reveal">
+      <div>
+        <span class="tag">En uso diario en el campo</span>
+        <h2>Mi Gallinero: la postura y los números, en el bolsillo.</h2>
+      </div>
+      <p>Una app para llevar un gallinero chico como un negocio: se anotan los huevos y el alimento del día, y devuelve el porcentaje de postura, el costo de cada huevo, el margen del mes y cuánto ahorra el forraje hidropónico. La usamos dos personas, cada una desde su teléfono, y los datos se sincronizan solos.</p>
+    </div>
+
+    <div class="showcase campo reveal">
+      <div class="tres">
+        <figure><img src="img/gallinero-produccion.webp" width="780" height="1688" loading="lazy" alt="Pantalla Producción: gráfico de tasa de postura de 30 días contra la meta, y huevos por semana"></figure>
+        <figure><img src="img/gallinero-resumen.webp" width="780" height="1688" loading="lazy" alt="Pantalla Resumen: postura de 68% con la meta alcanzada, índice de eficiencia 89, huevos por día y costo por huevo"></figure>
+        <figure><img src="img/gallinero-sim.webp" width="780" height="1688" loading="lazy" alt="Simulador: margen proyectado por mes y deslizadores para gallinas, postura, forraje y precios"></figure>
+      </div>
+    </div>
+    <p class="nota reveal">Capturas con datos de demostración, armados a partir de un registro real.</p>
+
+    <div class="features">
+      <article class="feat reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg></div>
+        <h3>El día, en segundos</h3>
+        <p>Un botón para anotar huevos, balanceado, maíz y forraje. Cada día es un solo registro: si se carga dos veces, se corrige en vez de duplicarse.</p>
+      </article>
+      <article class="feat reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 12l6-6"/></svg></div>
+        <h3>Postura y eficiencia</h3>
+        <p>Porcentaje de postura contra una meta propia y un índice de 0 a 100 que combina postura, costo por huevo y uso de forraje.</p>
+      </article>
+      <article class="feat reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <h3>Costos y margen</h3>
+        <p>Costo de cada huevo frente a lo que vale en el maple, ventas del mes y margen real, con precios de alimento que se editan al vuelo.</p>
+      </article>
+      <article class="feat reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20h10M12 20V10"/><path d="M12 10c0-4 3-6 7-6 0 4-3 6-7 6ZM12 13c0-3-2-5-6-5 0 3 2 5 6 5Z"/></svg></div>
+        <h3>Forraje hidropónico</h3>
+        <p>Cuánto balanceado reemplaza el forraje verde, cuánta plata ahorra y si la postura acompaña, semana a semana.</p>
+      </article>
+      <article class="feat reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg></div>
+        <h3>Simulador</h3>
+        <p>¿Y con el doble de gallinas? Proyecta huevos, gallinaza y pastoreo rotativo de 25 a 1000 aves, con los números propios del gallinero.</p>
+      </article>
+      <article class="feat reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l22 22M16.72 11.06A10.94 10.94 0 0 1 19 12.55M5 12.55a10.94 10.94 0 0 1 5.17-2.39M10.71 5.05A16 16 0 0 1 22.58 9M1.42 9a15.91 15.91 0 0 1 4.7-2.88M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></svg></div>
+        <h3>Sin señal, y compartida</h3>
+        <p>Funciona sin conexión: lo anotado espera en una cola y se sube solo cuando vuelve la señal. Dos teléfonos comparten la misma planilla de Google.</p>
+      </article>
+    </div>
+
+    <div class="numbers reveal">
+      <div class="num"><b>2</b><span>teléfonos cargando<br>sobre los mismos datos</span></div>
+      <div class="num"><b>35</b><span>ayudas que explican<br>cada número</span></div>
+      <div class="num"><b>100%</b><span>usable sin señal,<br>instalada como app</span></div>
+      <div class="num"><b>1</b><span>solo archivo HTML,<br>gráficos propios, sin librerías</span></div>
+    </div>
+
+    <div class="stack reveal">
+      <small>Hecho con</small>
+      <span class="chip">HTML · CSS · JavaScript</span>
+      <span class="chip">Gráficos SVG propios</span>
+      <span class="chip">PWA sin conexión</span>
+      <span class="chip">Google Sheets</span>
+      <span class="chip">Google Apps Script</span>
+      <span class="chip">Netlify</span>
     </div>
    </div>
   </div>
